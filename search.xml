@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[one]]></title>
+    <url>%2F2019%2F06%2F05%2Fone%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Github+Hexo个人博客搭建过程]]></title>
+    <url>%2F2019%2F06%2F04%2FGithub-Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B-1%2F</url>
+    <content type="text"><![CDATA[GIthub+Hexo个人博客搭建过程终于弄得像个样子了，这里记录一下过程，也算做一种学习了。 安装git我用的是Windows，直接官网找安装包下载安装就好了。 安装Node.js同理 验证Node.js和npm右键鼠标git bash here $ node -vv8.11.2$ npm -v5.6.0 安装Hexo使用npm安装Hexo $ npm install -g hexo-cli 建站$ hexo init blog blog为站点，名字随意定义 安装next主题在终端窗口下，定位到 Hexo 站点目录下 $ cd blog $ git clone https://github.com/iissnan/hexo-theme-next themes/next 启动主题与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开 站点配置文件（blog/_config.yml）， 找到 theme 字段，并将其值更改为 next。 theme: next 新建repository在github右上角选择new repository 将repository填成yourname.github.io,yourname最好和GitHub名一致 然后Creat repository SSH配置$ git config --global user.name &quot;arubi729&quot; $ git config --global user.email &quot;xxxxx@gmail.com&quot; $ ssh-keygen -t rsa -C &quot;xxxxx@gmail.com&quot; 输入eval “$(ssh-agent -s)”，添加密钥到ssh-agent eval &quot;$(ssh-agent -s)&quot; 再输入ssh-add ~/.ssh/id_rsa，添加生成的SSH key到ssh-agent ssh-add ~/.ssh/id_rsa 登录Github，点击头像下的settings，添加ssh 新建一个new ssh key，将id_rsa.pub文件里的内容复制上去 输入ssh -T git@github.com，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了 部署找到站点根目录下的_config.yml文件，添加repository的地址 deploy: type: git repository: https://github.com/arubi729/arubi729.github.io.git branch: master]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Github+Hexo个人博客搭建过程]]></title>
+    <url>%2F2019%2F06%2F04%2FGithub-Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[GIthub+Hexo个人博客搭建过程终于弄得像个样子了，这里记录一下过程，也算做一种学习了。 安装git我用的是Windows，直接官网找安装包下载安装就好了。 安装Node.js同理 验证Node.js和npm右键鼠标git bash here $ node -vv8.11.2$ npm -v5.6.0 安装Hexo使用npm安装Hexo $ npm install -g hexo-cli 建站$ hexo init blog blog为站点，名字随意定义 安装next主题在终端窗口下，定位到 Hexo 站点目录下 $ cd blog $ git clone https://github.com/iissnan/hexo-theme-next themes/next 启动主题与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开 站点配置文件（blog/_config.yml）， 找到 theme 字段，并将其值更改为 next。 theme: next 新建repository在github右上角选择new repository 将repository填成yourname.github.io,yourname最好和GitHub名一致 然后Creat repository SSH配置$ git config --global user.name &quot;arubi729&quot; $ git config --global user.email &quot;xxxxx@gmail.com&quot; $ ssh-keygen -t rsa -C &quot;xxxxx@gmail.com&quot; 输入eval “$(ssh-agent -s)”，添加密钥到ssh-agent eval &quot;$(ssh-agent -s)&quot; 再输入ssh-add ~/.ssh/id_rsa，添加生成的SSH key到ssh-agent ssh-add ~/.ssh/id_rsa 登录Github，点击头像下的settings，添加ssh 新建一个new ssh key，将id_rsa.pub文件里的内容复制上去 输入ssh -T git@github.com，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了 部署找到站点根目录下的_config.yml文件，添加repository的地址 deploy: type: git repository: https://github.com/arubi729/arubi729.github.io.git branch: master]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F06%2F06%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
